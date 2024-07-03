@@ -1,0 +1,65 @@
+create username& password
+input username& password
+is username& password not correct
+	goto input username& password
+else
+	print username and password saved
+
+input type
+is type = car
+	input process
+		is process = add
+			Add car, take details about car such as brand, model, price and year
+		else is process = remove
+			remove car, take the brand and model of car that will removed
+		else is process = view top car
+			view top car, view the last car inputed in the agency
+		else is process = view all cars
+			view all cars, view all cars from the last car inputed to the first
+		else is process = search
+			search, take the brand and model of car and search about it
+		else
+			exit
+else is type = car part
+	input process
+		is process = add
+			Add car part, take details about car part such as name, type and price
+		else is process = remove
+			remove car part, take the name and type of car that will removed
+		else is process = view top car
+			view top car part, view the last car part inputed in the agency
+		else is process = view all cars
+			view all car part, view all cars parts from the last car inputed to the first
+		else is process = search
+			search, take the name and type of car parts and search about it
+		else
+			exit
+else is type = maintenance
+	input process
+		is process = add
+			Add car to maintenance, take details about car such as brand, model, price,year and lavel of damage
+		else is process = remove
+			remove car from maintenance, take the brand and model of car that will removed
+		else is process = view front car
+			view the front car, view the first car inputed in the maintenance
+		else is process = view all cars
+			view all car in maintenance,view all cars from the front car inputed to the rear
+		else is process = search
+			search, take the brand and model of car and search about it
+		else
+			exit
+else is type = usedcar
+	input process
+		is process = add
+			Add car to usedcars, take details aboout car such as brand , model,price and year
+		else is process = remove
+			remove car from used car, take the brand and model of car that will removed
+		else is process = view all cars
+			view all car used cars , view all cars in the linked list
+		else is process = search
+			search, take the brand and model of car and search about it
+		else
+			exit
+is you want to continue 
+	Yes , go to input process
+	No , Exit
